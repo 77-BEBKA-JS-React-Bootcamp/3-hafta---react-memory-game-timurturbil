@@ -25,7 +25,7 @@ class App extends Component {
       ],
       flippedList: [],
     };
-    /* this.shuffle(this.state.cards) */
+    this.shuffle(this.state.cards)
 
   }
 
@@ -46,6 +46,14 @@ class App extends Component {
 
 
   changeItem = (id, isFlipped) => {
+    const repeatString = function(value, number) {
+      let deger = "";
+      for(let i =0; i < number; i++){
+          deger += value;
+      }
+      return deger;
+  }
+  console.log(repeatString("hey", 4 ));
     /* this.setNullorfalse(null) */
     let myCard = this.state.cards.filter(card => card.id === id);
     if (myCard[0] == null) {
@@ -100,10 +108,13 @@ class App extends Component {
     this.setState({ cards: newListe })
   }
   refreshPage = ()=>{
+
     window.location.reload();
+
   }
 
   render() {
+
     return (
       <div>
         <div className="Score">
