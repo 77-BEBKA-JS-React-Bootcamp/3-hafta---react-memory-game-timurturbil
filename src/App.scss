@@ -1,0 +1,52 @@
+#root {
+  width:40%;
+  margin: 10px auto;
+  border-radius: 10px;
+  .playground {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .card {
+      width: 30%;
+      height: 120px;
+      padding-top: 95px;  
+      box-sizing: border-box;
+      text-align: center;
+      margin-bottom:30px;
+	    position: relative;
+      div {
+        background: #f4f5f7; 
+      }
+      .front { 
+        width: 100px;
+        font-size: 50px;
+        line-height: 120px;
+        color: darken(#a4a6aa,20%);
+        display:flex;
+        justify-content: center;
+        background: linear-gradient(to top, #FFFFFF, #ECE9E6);
+      }
+    }
+  }
+}
+
+.Score{
+    font-weight: bold;
+    width: 180px;
+    height: 20px;
+    font-style: italic;
+    font-size: 14;
+    color: "#4a54f1";
+    text-align: "center";
+    padding: auto;
+    margin: 10px auto;
+  }
+
+.refresh{
+    width: 100px;
+    height: 70px;
+    .button{
+      width: 100px;
+
+    }
+  }
